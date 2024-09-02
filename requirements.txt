@@ -1,3 +1,3 @@
-opencv-contrib-python
-numpy
-imutils
+opencv-contrib-python==4.5.3.56
+numpy==1.16.4
+imutils==0.5.4
