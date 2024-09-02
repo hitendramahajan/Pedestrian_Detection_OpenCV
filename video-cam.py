@@ -1,7 +1,7 @@
 import cv2
 from Human_Detection import Detector
 
-cap = cv2.VideoCapture('./testing/t3.mp4')
+cap = cv2.VideoCapture('C:/IDE/Pedestrian_Detection_OpenCV/video1.mp4')
 # size = (800, int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 # # size = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 # print(size)
@@ -16,7 +16,7 @@ while True:
     # out.write(frame)
     # cv2.resizeWindow('Car Detection System', 600, 600)
     k = cv2.waitKey(30) & 0xff
-    if k == 27:
+    if k == 27 or k == ord('q'):
         break
 
 cv2.destroyAllWindows()
